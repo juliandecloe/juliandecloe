@@ -1,0 +1,945 @@
+body {
+	background: #2C2F33;
+	margin: 0;
+	padding: 0;
+	font-family: 'helvetica', regular;
+	font-weight: 500;
+	overflow-x: hidden;
+}
+
+.bgImg {
+	position: fixed;
+	z-index: -1;
+	opacity: 20%;
+}
+
+#bgimg1 {
+	width: 12%;
+	top: 10%;
+	left: 75%;
+	transform: rotate(62deg);
+}
+#bgimg2 {
+	width: 15%;
+	top: 20%;
+	left: 5%;
+	transform: rotate(62deg);
+}
+#bgimg3 {
+	width: 8%;
+	top: 10%;
+	left: 40%;
+	transform: rotate(36deg);
+}
+#bgimg4 {
+	width: 20%;
+	top: 65%;
+	left: 85%;
+	transform: rotate(-45deg);
+}
+#bgimg5 {
+	width: 15%;
+	top: 65%;
+	left: 55%;
+	transform: rotate(62deg);
+}
+#bgimg6 {
+	width: 15%;
+	top: 60%;
+	left: 25%;
+	transform: rotate(-80deg);
+}
+
+
+/*================ NAV ================*/
+
+nav {
+	background: #2C2F33;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 10px 0 10px 30px;
+}
+
+nav div {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 350px;
+	padding-right: 30px;
+}
+
+nav div a {
+	color: white;
+	width: 126px;
+	border-bottom: 1px solid #79272E;
+	text-align: center;
+	padding: 10px 0;
+	text-decoration: none;
+}
+
+nav div a:hover {
+	-moz-box-shadow: #79272E 0 -10px 6px -10px inset;
+	-webkit-box-shadow: #79272E 0 -10px 6px -10px inset;
+	box-shadow: #79272E 0 -10px 6px -10px inset;
+	cursor: pointer;
+}
+
+nav img {
+	width: 45px;
+	margin-right: 80%;
+}
+
+/*================ MAIN - Home ================*/
+
+/*-------- JULIAN --------*/
+
+#home .julian {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin: 10% 25% 0 25%;
+}
+
+#home .julian img {
+	width: 221.375px;
+	height: 295.156px;
+	margin-left: 5%;
+}
+
+#home .julian div {
+	margin-bottom: 8%;
+}
+
+#home h1, h2, h3 {
+	color: white;
+	margin: 0;
+}
+
+#home h1 {
+	font-size: 42px;
+	font-weight: 700;
+}
+
+#home h2 {
+	font-size: 28px;
+	margin: 2% 0 5% 0;
+	font-weight: 700;
+}
+
+#home .julian p {
+	color: lightgray;
+	margin: 0;
+}
+
+/*-------- SKILLS - Home --------*/
+
+#home .skills {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	background: #B6A6A1;
+	color: white;
+	margin: 0 15%;
+	border-radius: 10px;
+	box-shadow: 5px 5px 7px black;
+	padding: 2% 0;
+}
+
+#home .skills ul {
+	list-style-type: none;
+}
+
+#home h3 {
+	font-size: 28px;
+	font-weight: 600;
+	margin: 0 0 3% 0;
+}
+
+#home .skills li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20% 2% 2%;
+}
+
+#home .skills img {
+	width: 50%;
+}
+
+#home .skills p {
+	font-size: 20px;
+	margin: 0;
+}
+
+/*-------- WORK - Home --------*/
+
+#home .work {
+	color: white;
+	margin: 140px 15% 10% 15%;
+} 
+
+#home .wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 5%;
+}
+
+#home .work article {
+	background: #2F3237;
+	border-radius: 25px;
+	width: 42%;
+	height: 100%;
+	padding: 3% 3% 5% 3%;
+	margin-bottom: 2.5%;
+	box-shadow: 3px 3px 12px -4px black;
+}
+
+#home .wrap article:hover {
+	background: #313439;
+	box-shadow: 6px 6px 24px -8px black;
+	transition: 0.5s;
+	cursor: pointer;
+	margin-top: -1%;
+}
+
+#home .work article img {
+	width: 100%;
+	height: 425px;
+	object-fit: cover;
+	object-position: top;
+	border-radius: 15px;
+	margin-top: 5%;
+}
+
+#home .work article p {
+	color: lightgray;
+	text-overflow: ellipsis;
+  	overflow: hidden;  
+  	white-space: nowrap;
+  	width: 100%;
+}
+
+#home .wrap article > h4 {
+	font-size: 24px;
+	margin: 2% 0 5% 0;
+	font-weight: 600;
+	width: 100%;
+	text-overflow: ellipsis;
+  	overflow: hidden;  
+  	white-space: nowrap;
+}
+
+#home .work > a {
+	color: white;
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: 600;
+	transition: 0.5s;
+}
+
+#home .work > a img {
+	width: 1em;
+}
+
+#home .work > a:hover {
+	font-size: 26px;
+}
+
+/*================ FOOTER ================*/
+
+footer {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	background: #2F3237;
+	padding: 2% 10%;
+	color: white;
+	height: 300px;
+}
+
+footer > div:first-of-type {
+	width: 30%;
+	margin-right: 15%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer > div:first-of-type img {
+	width: 150px;
+}
+
+h5 {
+	font-size: 28px;
+	font-weight: 700px;
+	margin: 5% 0 1% 0
+}
+
+h6 {
+	font-size: 20px;
+	font-weight: 600px;
+	margin: 0;
+}
+
+footer > div:nth-of-type(2) {
+	display: flex;
+	flex-direction: column;
+	width: 55%;
+}
+
+footer > div:nth-of-type(2) p:first-of-type {
+	margin-left: 2%;
+}
+
+footer > div:nth-of-type(2) p:nth-of-type(2) {
+	font-weight: 700;
+	margin: 2% 0 4% 2%;
+}
+
+footer hr {
+	border: 1px solid #79272E;
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+footer > div:nth-of-type(2) > a {
+	color: white;
+	text-decoration: none;
+	background: #B6A6A1;
+	border-radius: 45px;
+	padding: 3% 4%;
+	width: 332px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+
+footer > p {
+	position: absolute;
+	bottom: 5%;
+	left: 0;
+	align-self: center;
+	color: gray;
+	font-size: 12px;
+	font-weight: 400;
+	width: 100%;
+	text-align: center;
+}
+
+
+
+
+/*================ MAIN - Allwork ================*/
+
+#allwork .work {
+	color: white;
+	margin: 140px 0;
+}
+
+#allwork .work article > div {
+	display: flex;
+	flex-direction: row;
+	overflow-x: scroll;
+	padding: 15px 0;
+	margin-bottom: 43px;
+}
+
+#allwork .work article > div::-webkit-scrollbar {
+	display: none;
+}
+
+#allwork .work article > div > div {
+	padding: 1%;
+}
+
+#allwork .work article img {
+	margin-right: 15px;
+	border-radius: 15px;
+	box-shadow: 3px 3px 12px -4px black;
+	width: 155px;
+	height: 275px;
+	object-fit: cover;
+	object-position: top;
+}
+
+#allwork .work article img:first-of-type {
+	margin-left: 15%;
+}
+
+#allwork .work article img:hover {
+	box-shadow: 6px 6px 24px -8px black;
+	transition: 0.5s;
+	margin-top: -1%;
+	cursor: pointer;
+}
+
+.work h3 {
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 43px;
+	margin-left: 15%;
+	width: 100%;
+}
+
+#allwork .work h4 {
+	font-size: 18px;
+	margin: 0 0 14px 15%;
+	font-weight: 600;
+	width: 100%;
+}
+
+.scrolloff {
+	overflow: hidden;
+}
+
+.move {
+	animation: movein 3s ease forwards;
+}
+
+@keyframes movein {
+	0% {
+		transform: translateX(100%);
+		background: none;
+	}
+	30% {
+		transform: translateX(-91.1%);
+		background: none;
+	}
+	100% {
+		transform: translateX(-91.1%);
+		background: rgba(0,0,0,0.25);	
+	}
+}
+
+.moveforwards {
+	animation: moveforwards 2s ease ;
+}
+
+@keyframes moveforwards {
+	0% {
+		transform: translateX(-91.1%);
+		background: rgba(0,0,0,0.25);
+	}
+	30% {
+		transform: translateX(-91.1%);	
+		background: none;
+	}
+	100% {
+		transform: translateX(-200%);
+		background: none;	
+	}
+}
+
+/*--------- Pages ---------*/
+
+.appPage {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 100%;
+	transition: 1s;
+	width: 100%;
+	padding: 114px 5% 114px 5%;
+	transition: all 1s ease;
+	overflow-y: scroll;
+}
+
+.appPage::-webkit-scrollbar {
+	display: none;
+}
+
+.appPage svg {
+	position: absolute;
+	top: 135px;
+	right: 15%;
+	width: 40px;
+	fill: white;
+}
+
+.appPage svg:hover {
+	fill: #79272E;
+	cursor: pointer;
+}
+
+.appPage > div {
+	background: #2F3237;
+	border: 2px solid #3B3F42;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: row;
+	color: white;
+	padding: 5%;
+	width: 80%;
+}
+
+.appPage > div > div {
+	width: 30%;
+}
+
+.appPage > div > div img {
+	width: 380px;
+}
+
+.appPage h3 {
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 43px;
+	width: 80%;
+}
+
+.appPage h4 {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.appPage ul {
+	list-style-type: square;
+	margin-bottom: 30px;
+}
+
+.appPage li {
+	margin-bottom: 5px;
+}
+
+.appPage article {
+	margin-left: 10%;
+	width: 55%;
+}
+
+.appPage article a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.appPage article a:hover {
+	text-decoration: underline;
+}
+
+.appPage article img {
+	width: 100%;
+}
+
+.newimg, .newa, .newimgbigger {
+	display: none;
+}
+
+.webPage {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 100%;
+	transition: 1s;
+	width: 100%;
+	padding: 114px 5% 114px 5%;
+	transition: all 1s ease;
+	overflow-y: scroll;
+}
+
+.webPage::-webkit-scrollbar {
+	display: none;
+}
+
+.webPage svg {
+	position: absolute;
+	top: 135px;
+	right: 15%;
+	width: 40px;
+	fill: white;
+}
+
+.webPage svg:hover {
+	fill: #79272E;
+	cursor: pointer;
+}
+
+.webPage > div {
+	background: #2F3237;
+	border: 2px solid #3B3F42;
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	color: white;
+	padding: 5%;
+	width: 80%;
+}
+
+.webPage > div > div {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.webPage > div > div img {
+	width: 80%;
+}
+
+.webPage h3 {
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 43px;
+	width: 80%;
+}
+
+.webPage h4 {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.webPage ul {
+	list-style-type: square;
+	margin-bottom: 30px;
+}
+
+.webPage li {
+	margin-bottom: 5px;
+}
+
+.webPage article {
+	margin-left: 10%;
+	width: 75%;
+}
+
+.webPage article a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.webPage article a:hover {
+	text-decoration: underline;
+}
+
+.webPage article img:nth-of-type(2) {
+	width: 30%;
+}
+
+.escape {
+  background: linear-gradient(90deg, white, #29BDE2, #29BDE2, #29BDE2, #29BDE2, #29BDE2, #29BDE2, #29BDE2, #29BDE2, #29BDE2, #29BDE2, #29BDE2, #29BDE2, #29BDE2, #29BDE2, #29BDE2, white);
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 1% 5%;
+  box-shadow: 2px 2px 2px black;
+  cursor: pointer;
+  background-size: 400%;
+  animation: colorswitch 5s linear infinite;
+  margin-top: 30px;
+}
+
+@keyframes colorswitch {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+
+/*================ MAIN - aboutme ================*/
+
+/*-------- JULIAN --------*/
+
+#aboutme main {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10%;
+}
+
+#aboutme .julian {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	margin: 10% 0 0 23%;
+	width: 53%;
+}
+
+#aboutme .julian img {
+	width: 221.375px;
+	height: 295.156px;
+	margin-right: 5%;
+}
+
+#aboutme .julian div {
+	margin-bottom: 8%;
+}
+
+#aboutme h1, h2, h3 {
+	color: white;
+	margin: 0;
+}
+
+#aboutme h1 {
+	font-size: 42px;
+	font-weight: 700;
+}
+
+#aboutme h2 {
+	font-size: 28px;
+	margin: 2% 0 5% 0;
+	font-weight: 700;
+}
+
+#aboutme .julian p {
+	color: lightgray;
+	margin: 0;
+}
+
+/*-------- SKILLS - Home --------*/
+
+#aboutme .skills {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	background: #B6A6A1;
+	color: white;
+	border-radius: 10px;
+	box-shadow: 5px 5px 7px black;
+	padding: 2% 0;
+	margin-left: 20%;
+	margin-bottom: 7%;
+	width: 60%;
+}
+
+#aboutme .skills ul {
+	list-style-type: none;
+}
+
+#aboutme h3 {
+	font-size: 28px;
+	font-weight: 600;
+	margin: 0 0 3% 0;
+}
+
+#aboutme .skills li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20% 2% 2%;
+}
+
+#aboutme .skills img {
+	width: 50%;
+}
+
+#aboutme .skills p {
+	font-size: 20px;
+	margin: 0;
+}
+
+#aboutme .me {
+	background: #2F3237;
+	color: white;
+	width: 70%;
+	height: 100%;
+	padding: 10% 5% 8.5% 5%;
+	border-bottom-left-radius: 10px;
+} 
+
+
+
+/*================ RESPONSIVE - Home ================*/
+
+@media (max-width: 860px) {
+	#home .julian {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 400px 15% 0 15%;
+		text-align: center;
+	}
+
+	#home .julian img {
+		position: absolute;
+		top: 80px;
+		width: 221.375px;
+		height: 295.156px;
+		margin: 0;
+	}
+
+	#home h1 {
+		font-size: 40px;
+		font-weight: 700;
+	}
+
+	#home h2 {
+		font-size: 26px;
+		margin: 5% 0 10% 0;
+		font-weight: 700;
+	}
+
+	#home .julian div {
+		margin-bottom: 15%;
+	}
+
+	#home .skills li {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: normal;
+		padding: 0 20% 2% 2%;
+	}
+
+	#home .skills p {
+		font-size: 20px;
+		margin: 3% 0 2% 0;
+	}
+
+	#home .skills img {
+		width: 70%;
+	}
+
+	#home .wrap {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 5%;
+	}
+
+	#home .work article {
+		background: #2F3237;
+		border-radius: 25px;
+		width: 94%;
+		height: 100%;
+		padding: 6% 6% 8% 6%;
+		margin-bottom : 5%;
+		box-shadow: 3px 3px 12px -4px black;
+	}
+
+	footer {
+		height: 459px;
+	}
+
+	footer > div:first-of-type {
+		display: none;
+	}
+
+	footer > div:nth-of-type(2) {
+		width: 100%;
+	}
+
+	footer > p {
+		color: gray;
+		font-size: 12px;
+		font-weight: 400;
+		width: 100%;
+		text-align: center;	}
+
+	.footerwrapper ul {
+		top: 64%;
+		width: 60%;
+	}
+
+	#aboutme main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 10%;
+	}
+
+
+	#aboutme main > div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#aboutme .julian {
+		margin: 140px 0 0 0;
+		width: 70%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#aboutme .julian div {
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	#aboutme .skills {
+		width: 80%;
+		margin: 0 0 7% 0;
+	}
+
+	#aboutme .me {
+		padding: 5%;
+		width: 80%;
+		border-radius: 10px;
+
+	} 
+
+	#aboutme .skills p {
+		font-size: 16px;
+	}
+
+}
+
+
+@media (max-width: 1100px) {	
+	.appPage > div > div {
+		display: none;
+	}
+
+	.appPage article p:last-of-type {
+		display: none;
+	}
+
+	.newimg {
+		display: block;
+		margin-bottom: 60px;
+		margin-top: 60px;
+	}
+
+	.appPage h3 {
+		width: 100%;
+	}
+
+	.newa {
+		display: block;
+		color: white;
+		text-decoration: none;
+		background: #B6A6A1;
+		border-radius: 45px;
+		padding: 3% 4%;
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.appPage article {
+		width: 80%;
+	}
+
+	.webPage > div > div {
+		display: none;
+	}
+
+	.webPage article p:last-of-type {
+		display: none;
+	}
+
+	.newimgbigger {
+		display: block;
+		margin-bottom: 60px;
+		margin-top: 60px;
+		width: 100%;
+	}
+
+	.webPage h3 {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
