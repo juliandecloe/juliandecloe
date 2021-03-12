@@ -152,6 +152,7 @@ nav img {
 
 #home .skills ul {
 	list-style-type: none;
+	width: 100%;
 }
 
 #home h3 {
@@ -162,18 +163,20 @@ nav img {
 
 #home .skills li {
 	display: flex;
-	justify-content: space-between;
+	justify-content: left;
 	align-items: center;
-	padding: 0 20% 2% 2%;
+	padding: 0 0 2% 2%;
+	width: 100%;
 }
 
 #home .skills img {
-	width: 50%;
+	width: 373px;
 }
 
 #home .skills p {
 	font-size: 20px;
 	margin: 0;
+	width: 50%;
 }
 
 /*-------- WORK - Home --------*/
@@ -811,6 +814,10 @@ footer > p {
 		padding: 6% 6% 8% 6%;
 		margin-bottom : 5%;
 		box-shadow: 3px 3px 12px -4px black;
+	}
+
+	#home .work article img {
+		height: 400px;
 	}
 
 	footer {
