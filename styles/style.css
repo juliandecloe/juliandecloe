@@ -163,20 +163,19 @@ nav img {
 
 #home .skills li {
 	display: flex;
-	justify-content: left;
+	justify-content: space-between;
 	align-items: center;
 	padding: 0 0 2% 2%;
-	width: 100%;
+	width: 90%;
 }
 
 #home .skills img {
-	width: 373px;
+	width: 45%;
 }
 
 #home .skills p {
 	font-size: 20px;
 	margin: 0;
-	width: 50%;
 }
 
 /*-------- WORK - Home --------*/
@@ -654,15 +653,21 @@ footer > p {
 #aboutme main {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 	margin-bottom: 10%;
+}
+
+#aboutme main > div {
+	margin: 0 10%;
+	width: 55%;
 }
 
 #aboutme .julian {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
-	margin: 10% 0 0 23%;
-	width: 53%;
+	margin: 10% 0 0 7%;
+	width: 100%;
 }
 
 #aboutme .julian img {
@@ -696,7 +701,7 @@ footer > p {
 	margin: 0;
 }
 
-/*-------- SKILLS - Home --------*/
+/*-------- SKILLS - About --------*/
 
 #aboutme .skills {
 	display: flex;
@@ -706,14 +711,13 @@ footer > p {
 	color: white;
 	border-radius: 10px;
 	box-shadow: 5px 5px 7px black;
-	padding: 2% 0;
-	margin-left: 20%;
-	margin-bottom: 7%;
-	width: 60%;
+	padding: 2% 7% 2% 0;
+	width: 100%;
 }
 
 #aboutme .skills ul {
 	list-style-type: none;
+	width: 100%;
 }
 
 #aboutme h3 {
@@ -726,26 +730,36 @@ footer > p {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 20% 2% 2%;
+	padding: 0 0 2% 2%;
+	width: 90%;
 }
 
 #aboutme .skills img {
-	width: 50%;
+	width: 45%;
 }
 
 #aboutme .skills p {
 	font-size: 20px;
 	margin: 0;
+	text-overflow: ellipsis;
+  	overflow: hidden;  
+  	white-space: nowrap;
+  	width: 100%;
 }
 
 #aboutme .me {
 	background: #2F3237;
 	color: white;
-	width: 70%;
+	width: 20%;
 	height: 100%;
-	padding: 10% 5% 8.5% 5%;
+	padding: 10% 3% 8.5% 3%;
 	border-bottom-left-radius: 10px;
 } 
+
+#aboutme .me p:last-of-type {
+	margin-top: 20%;
+}
+
 
 
 
@@ -781,6 +795,12 @@ footer > p {
 
 	#home .julian div {
 		margin-bottom: 15%;
+	}
+
+	#home .skills {
+		width: 80%;
+		margin: 0;
+		margin-left: 10%;
 	}
 
 	#home .skills li {
@@ -856,6 +876,8 @@ footer > p {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		margin: 0;
+		width: 100%;
 	}
 
 	#aboutme .julian {
@@ -873,7 +895,15 @@ footer > p {
 
 	#aboutme .skills {
 		width: 80%;
-		margin: 0 0 7% 0;
+		margin: 0 0 10% 0;
+	}
+
+	#aboutme .skills li {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: normal;
+		padding: 0 20% 2% 2%;
 	}
 
 	#aboutme .me {
@@ -884,7 +914,12 @@ footer > p {
 	} 
 
 	#aboutme .skills p {
-		font-size: 16px;
+		font-size: 20px;
+		margin: 3% 0 2% 0;
+	}
+
+	#aboutme .skills img {
+		width: 70%;
 	}
 
 }
